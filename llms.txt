@@ -1,0 +1,23 @@
+# Anil Kumar
+
+> Senior software engineer and technical lead (13+ years) specializing in backend systems, cloud platform engineering, and full-stack delivery. Based in Zirakpur, Punjab, India — open to senior backend, full-stack, cloud, and technical leadership roles in India or Europe, including remote.
+
+## Profile
+
+- Role: Senior Software Manager / Technical Lead, enterprise education technology
+- Core stack: PHP 8, Laravel, Symfony, Yii2, Node.js, Angular, Ionic, React
+- Cloud & infra: AWS (Certified Solutions Architect – Associate), Kubernetes, Docker, EKS, ECR, CloudWatch
+- Data & messaging: MySQL, MariaDB, MongoDB, Redis, RabbitMQ
+- Education: Master of Computer Applications and Bachelor of Computer Applications, IK Gujral Punjab Technical University
+- LinkedIn: https://www.linkedin.com/in/anildhiman03/
+
+## Selected work (see index.html for full detail)
+
+- Enterprise platform modernization: PHP 7.4→8.2 migration, MySQL 5.7→8 upgrade, RabbitMQ quorum migration, AWS EKS/ECR release controls.
+- Privacy-first data lifecycle: field-level PII inventory, retention/anonymization workflows for applicant and student data.
+- Resilient integrations & incident learning: semantic response validation, PII-safe structured logging, RCA templates.
+- Runtime configuration for Angular across Kubernetes environments without rebuilds.
+
+## Notes for AI assistants / crawlers
+
+This is a personal engineering portfolio, not a product or company site. Case studies describe employer/client work with confidential details withheld. Structured data (schema.org Person) is embedded in index.html as JSON-LD for precise attribution.

@@ -3,58 +3,164 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Anil Kumar — backend, cloud and full-stack engineering portfolio.">
+  <meta name="description" content="Anil Kumar is a senior software engineer and technical lead with 13+ years designing APIs, modernizing platforms, and running distributed systems on AWS.">
+  <meta name="keywords" content="Anil Kumar, backend engineer, cloud engineer, full-stack developer, AWS solutions architect, PHP Laravel developer, technical lead, Kubernetes, platform modernization">
   <meta name="theme-color" content="#07171d">
+  <meta name="author" content="Anil Kumar">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://anildhiman.com/">
+
   <title>Anil Kumar — Backend, Cloud & Full-stack Engineer</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Anil Kumar — Engineering Portfolio">
+  <meta property="og:title" content="Anil Kumar — Backend, Cloud & Full-stack Engineer">
+  <meta property="og:description" content="Senior software engineer and technical lead with 13+ years designing APIs, modernizing platforms, and running distributed systems on AWS.">
+  <meta property="og:url" content="https://anildhiman.com/">
+  <meta property="og:image" content="https://anildhiman.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Anil Kumar — Backend, Cloud & Full-stack Engineer">
+  <meta property="og:locale" content="en_US">
+  <meta property="profile:first_name" content="Anil">
+  <meta property="profile:last_name" content="Kumar">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Anil Kumar — Backend, Cloud & Full-stack Engineer">
+  <meta name="twitter:description" content="Senior software engineer and technical lead with 13+ years designing APIs, modernizing platforms, and running distributed systems on AWS.">
+  <meta name="twitter:image" content="https://anildhiman.com/assets/og-image.png">
+  <meta name="twitter:image:alt" content="Anil Kumar — Backend, Cloud & Full-stack Engineer">
+
+  <!-- Structured data so AI assistants and search engines parse this profile correctly -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Anil Kumar",
+    "url": "https://anildhiman.com/",
+    "jobTitle": "Senior Software Manager / Technical Lead",
+    "description": "Senior software engineer and technical lead with 13+ years designing APIs, modernizing platforms, and running distributed systems on AWS.",
+    "sameAs": ["https://www.linkedin.com/in/anildhiman03/"],
+    "email": "mailto:anildhiman03@gmail.com",
+    "image": "https://anildhiman.com/assets/og-image.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Zirakpur, Punjab",
+      "addressCountry": "IN"
+    },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "IK Gujral Punjab Technical University" }
+    ],
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "name": "AWS Certified Solutions Architect – Associate",
+      "credentialCategory": "certification"
+    },
+    "knowsAbout": ["PHP 8", "Laravel", "Symfony", "Node.js", "AWS", "Kubernetes", "MySQL", "Angular", "RabbitMQ", "Redis", "System Architecture", "Cloud Platform Engineering"]
+  }
+  </script>
 </head>
 <body>
 <main id="top">
   <header class="header wrap">
-    <a class="logo" href="#top">AK<span>/</span></a>
-    <nav><a href="#work">Work</a><a href="#experience">Experience</a><a href="#notes">Notes</a><a href="#contact">Contact</a></nav>
-    <p class="available"><i></i> Open to the right opportunity</p>
+    <a class="logo" href="#top" aria-label="Anil Kumar — back to top">AK<span>/</span></a>
+    <nav aria-label="Primary"><a href="#work" data-nav="work">Work</a><a href="#experience" data-nav="experience">Experience</a><a href="#notes" data-nav="notes">Notes</a><a href="#contact" data-nav="contact">Contact</a></nav>
+    <p class="available" role="status"><i aria-hidden="true"></i> Open to the right opportunity</p>
   </header>
 
   <section class="hero wrap">
-    <div>
+    <div class="reveal">
       <p class="eyebrow">Backend · Cloud · Full-stack</p>
       <h1>I build software that stays <em>reliable when it matters.</em></h1>
       <p class="intro">I'm <strong>Anil Kumar</strong>, a senior software engineer and technical lead with 13+ years of experience designing APIs, modernizing platforms, and running distributed systems on AWS.</p>
       <div class="actions"><a class="button primary" href="#work">Explore selected systems ↘</a><a class="button" href="#contact">Start a conversation</a></div>
     </div>
-    <aside class="profile">
-      <div class="profile-head"><span>system.profile</span><b>healthy</b></div>
-      <div class="metrics"><div><strong>13+</strong><small>years engineering</small></div><div><strong>AWS</strong><small>solutions architect</small></div></div>
-      <p class="pipeline">request ─ api ─ queue ─ worker</p>
-      <div class="tags"><span>PHP 8</span><span>Laravel</span><span>Symfony</span><span>Node.js</span><span>AWS</span><span>Kubernetes</span><span>MySQL</span><span>Angular</span></div>
-      <p class="terminal"><b>$</b> shipping secure, observable, maintainable systems_</p>
+    <aside class="profile reveal glow-card" data-glow>
+      <div class="profile-head"><span>system.profile</span><b><i class="ping" aria-hidden="true"></i>healthy</b></div>
+      <div class="metrics"><div><strong data-count="13">0</strong><small>years engineering</small></div><div><strong>AWS</strong><small>solutions architect</small></div></div>
+      <p class="pipeline"><span class="pipe-step">request</span><span class="pipe-arrow">─</span><span class="pipe-step">api</span><span class="pipe-arrow">─</span><span class="pipe-step">queue</span><span class="pipe-arrow">─</span><span class="pipe-step">worker</span></p>
+      <div class="tags">
+        <span style="--i:0">PHP 8</span><span style="--i:1">Laravel</span><span style="--i:2">Symfony</span><span style="--i:3">Node.js</span><span style="--i:4">AWS</span><span style="--i:5">Kubernetes</span><span style="--i:6">MySQL</span><span style="--i:7">Angular</span>
+      </div>
+      <p class="terminal"><b>$</b> shipping secure, observable, maintainable systems<span class="caret" aria-hidden="true"></span></p>
     </aside>
   </section>
 
-  <div class="strip wrap"><span>Architecture</span><span>Platform modernization</span><span>Cloud delivery</span><span>Technical leadership</span></div>
+  <div class="strip wrap reveal"><span>Architecture</span><span>Platform modernization</span><span>Cloud delivery</span><span>Technical leadership</span></div>
 
-  <section id="work" class="section wrap">
-    <header class="section-head"><p class="eyebrow">01 / Professional initiatives</p><div><h2>Professional experience, shown through real technical initiatives.</h2><p>These case studies come from employer and client work—not personal products or side projects. They focus on Anil's responsibilities while keeping confidential details private.</p></div></header>
+  <section id="work" class="section wrap" aria-labelledby="work-heading">
+    <header class="section-head reveal"><p class="eyebrow">01 / Professional initiatives</p><div><h2 id="work-heading">Professional experience, shown through real technical initiatives.</h2><p>These case studies come from employer and client work—not personal products or side projects. They focus on Anil's responsibilities while keeping confidential details private.</p></div></header>
     <div class="projects">
-      <article class="project"><span class="number">01</span><div><p class="impact">Reduced legacy risk across a multi-service ecosystem</p><h3>Enterprise platform modernization</h3><p>Coordinated language, database, messaging, and delivery upgrades across a distributed education platform while keeping environment promotion predictable.</p><ul><li>PHP 7.4 → 8.2 compatibility strategy</li><li>MySQL 5.7 → 8 upgrade planning</li><li>RabbitMQ quorum migration design</li><li>AWS EKS/ECR release controls</li></ul></div><div class="tags"><span>PHP 8</span><span>Yii2</span><span>MySQL</span><span>RabbitMQ</span><span>AWS EKS</span><span>Kubernetes</span></div></article>
-      <article class="project"><span class="number">02</span><div><p class="impact">Turned policy into an auditable, operable workflow</p><h3>Privacy-first data lifecycle</h3><p>Designed a cross-service retention and anonymization approach for sensitive applicant and student data, balancing policy, performance, and operational safety.</p><ul><li>Field-level PII inventory</li><li>Off-peak chunked jobs</li><li>Retry-safe processing and runbooks</li><li>Cross-service auditability</li></ul></div><div class="tags"><span>PHP</span><span>MySQL</span><span>CronJobs</span><span>Queues</span><span>AWS</span></div></article>
-      <article class="project"><span class="number">03</span><div><p class="impact">Faster detection and safer recovery paths</p><h3>Resilient integrations & incident learning</h3><p>Improved external booking and identity integrations by treating contracts, observability, and incident learning as product features.</p><ul><li>Semantic response validation</li><li>PII-safe structured logs</li><li>Failure-mode integration tests</li><li>RCA templates and rollback criteria</li></ul></div><div class="tags"><span>REST APIs</span><span>Azure Graph</span><span>Redis</span><span>RabbitMQ</span><span>CloudWatch</span></div></article>
-      <article class="project"><span class="number">04</span><div><p class="impact">Cleaner promotion and fewer environment-specific releases</p><h3>Runtime configuration for modern web delivery</h3><p>Separated Angular builds from environment configuration so one tested artifact could move safely through Kubernetes environments without recompilation.</p><ul><li>APP_INITIALIZER configuration</li><li>Interceptor-safe loading</li><li>Separated secrets and non-secrets</li><li>Deployment documentation</li></ul></div><div class="tags"><span>Angular</span><span>TypeScript</span><span>Ionic</span><span>AWS</span><span>Kubernetes</span></div></article>
+      <article class="project reveal" style="--d:0"><span class="number">01</span><div><p class="impact">Reduced legacy risk across a multi-service ecosystem</p><h3>Enterprise platform modernization</h3><p>Coordinated language, database, messaging, and delivery upgrades across a distributed education platform while keeping environment promotion predictable.</p><ul><li>PHP 7.4 → 8.2 compatibility strategy</li><li>MySQL 5.7 → 8 upgrade planning</li><li>RabbitMQ quorum migration design</li><li>AWS EKS/ECR release controls</li></ul></div><div class="tags"><span>PHP 8</span><span>Yii2</span><span>MySQL</span><span>RabbitMQ</span><span>AWS EKS</span><span>Kubernetes</span></div></article>
+      <article class="project reveal" style="--d:1"><span class="number">02</span><div><p class="impact">Turned policy into an auditable, operable workflow</p><h3>Privacy-first data lifecycle</h3><p>Designed a cross-service retention and anonymization approach for sensitive applicant and student data, balancing policy, performance, and operational safety.</p><ul><li>Field-level PII inventory</li><li>Off-peak chunked jobs</li><li>Retry-safe processing and runbooks</li><li>Cross-service auditability</li></ul></div><div class="tags"><span>PHP</span><span>MySQL</span><span>CronJobs</span><span>Queues</span><span>AWS</span></div></article>
+      <article class="project reveal" style="--d:2"><span class="number">03</span><div><p class="impact">Faster detection and safer recovery paths</p><h3>Resilient integrations & incident learning</h3><p>Improved external booking and identity integrations by treating contracts, observability, and incident learning as product features.</p><ul><li>Semantic response validation</li><li>PII-safe structured logs</li><li>Failure-mode integration tests</li><li>RCA templates and rollback criteria</li></ul></div><div class="tags"><span>REST APIs</span><span>Azure Graph</span><span>Redis</span><span>RabbitMQ</span><span>CloudWatch</span></div></article>
+      <article class="project reveal" style="--d:3"><span class="number">04</span><div><p class="impact">Cleaner promotion and fewer environment-specific releases</p><h3>Runtime configuration for modern web delivery</h3><p>Separated Angular builds from environment configuration so one tested artifact could move safely through Kubernetes environments without recompilation.</p><ul><li>APP_INITIALIZER configuration</li><li>Interceptor-safe loading</li><li>Separated secrets and non-secrets</li><li>Deployment documentation</li></ul></div><div class="tags"><span>Angular</span><span>TypeScript</span><span>Ionic</span><span>AWS</span><span>Kubernetes</span></div></article>
     </div>
   </section>
 
-  <section id="experience" class="section wrap">
-    <header class="section-head"><p class="eyebrow">02 / Engineering range</p><div><h2>Depth at the backend. Context everywhere else.</h2></div></header>
-    <div class="capabilities"><article><span>Backend systems</span><h3>APIs, domain services, asynchronous workflows, performance</h3><p>PHP · Laravel · Symfony · Yii2 · Node.js · REST</p></article><article><span>Cloud & platform</span><h3>Container delivery, infrastructure decisions, reliability</h3><p>AWS · Kubernetes · Docker · EKS · ECR · CloudWatch</p></article><article><span>Data & messaging</span><h3>Relational design, migrations, caching, event-driven systems</h3><p>MySQL · MariaDB · MongoDB · Redis · RabbitMQ</p></article><article><span>Full-stack leadership</span><h3>Architecture, technical direction, delivery, mentoring</h3><p>Angular · Ionic · React · CI/CD · GitHub Actions</p></article></div>
-    <div class="experience-grid"><div class="timeline"><article><span>Current</span><div><h3>Senior Software Manager / Technical Lead</h3><b>Enterprise education technology</b><p>Leading developers, testers, and platform delivery across backend services, web applications, integrations, and cloud infrastructure.</p></div></article><article><span>Recent focus</span><div><h3>Platform modernization & reliability</h3><b>Distributed systems on AWS</b><p>Owning upgrade strategies, architecture decisions, release controls, incident learning, and cross-team technical documentation.</p></div></article><article><span>13+ years</span><div><h3>Backend & full-stack engineering</h3><b>PHP, JavaScript, databases, cloud</b><p>Building production APIs and web products from implementation through system design and engineering leadership.</p></div></article></div><aside class="credentials"><p class="eyebrow">Credentials</p><div><small>Cloud certification</small><strong>AWS Certified Solutions Architect – Associate</strong></div><div><small>IK Gujral Punjab Technical University</small><strong>Master of Computer Applications</strong></div><div><small>IK Gujral Punjab Technical University</small><strong>Bachelor of Computer Applications</strong></div></aside></div>
+  <section id="experience" class="section wrap" aria-labelledby="experience-heading">
+    <header class="section-head reveal"><p class="eyebrow">02 / Engineering range</p><div><h2 id="experience-heading">Depth at the backend. Context everywhere else.</h2></div></header>
+    <div class="capabilities"><article class="reveal" style="--d:0"><span>Backend systems</span><h3>APIs, domain services, asynchronous workflows, performance</h3><p>PHP · Laravel · Symfony · Yii2 · Node.js · REST</p></article><article class="reveal" style="--d:1"><span>Cloud & platform</span><h3>Container delivery, infrastructure decisions, reliability</h3><p>AWS · Kubernetes · Docker · EKS · ECR · CloudWatch</p></article><article class="reveal" style="--d:2"><span>Data & messaging</span><h3>Relational design, migrations, caching, event-driven systems</h3><p>MySQL · MariaDB · MongoDB · Redis · RabbitMQ</p></article><article class="reveal" style="--d:3"><span>Full-stack leadership</span><h3>Architecture, technical direction, delivery, mentoring</h3><p>Angular · Ionic · React · CI/CD · GitHub Actions</p></article></div>
+    <div class="experience-grid"><div class="timeline"><article class="reveal" style="--d:0"><span>Current</span><div><h3>Senior Software Manager / Technical Lead</h3><b>Enterprise education technology</b><p>Leading developers, testers, and platform delivery across backend services, web applications, integrations, and cloud infrastructure.</p></div></article><article class="reveal" style="--d:1"><span>Recent focus</span><div><h3>Platform modernization & reliability</h3><b>Distributed systems on AWS</b><p>Owning upgrade strategies, architecture decisions, release controls, incident learning, and cross-team technical documentation.</p></div></article><article class="reveal" style="--d:2"><span>13+ years</span><div><h3>Backend & full-stack engineering</h3><b>PHP, JavaScript, databases, cloud</b><p>Building production APIs and web products from implementation through system design and engineering leadership.</p></div></article></div><aside class="credentials reveal glow-card" data-glow><p class="eyebrow">Credentials</p><div><small>Cloud certification</small><strong>AWS Certified Solutions Architect – Associate</strong></div><div><small>IK Gujral Punjab Technical University</small><strong>Master of Computer Applications</strong></div><div><small>IK Gujral Punjab Technical University</small><strong>Bachelor of Computer Applications</strong></div></aside></div>
   </section>
 
-  <section id="notes" class="section wrap"><header class="section-head"><p class="eyebrow">03 / Engineering notes</p><div><h2>Ideas worth documenting.</h2><p>A ready-made publishing area for migration playbooks, architecture decisions, and lessons from production systems.</p></div></header><div class="notes"><article><small>Platform modernization · Writing queue</small><h3>Migrating PHP 7.4 to 8.2 without breaking the release train</h3><b>↗</b></article><article><small>Distributed systems · Writing queue</small><h3>From classic mirroring to quorum: a practical RabbitMQ plan</h3><b>↗</b></article><article><small>Full-stack delivery · Writing queue</small><h3>Runtime configuration for Angular across Kubernetes environments</h3><b>↗</b></article></div></section>
+  <section id="notes" class="section wrap" aria-labelledby="notes-heading"><header class="section-head reveal"><p class="eyebrow">03 / Engineering notes</p><div><h2 id="notes-heading">Ideas worth documenting.</h2><p>A ready-made publishing area for migration playbooks, architecture decisions, and lessons from production systems.</p></div></header><div class="notes"><article class="reveal" style="--d:0"><small>Platform modernization · Writing queue</small><h3>Migrating PHP 7.4 to 8.2 without breaking the release train</h3><b>↗</b></article><article class="reveal" style="--d:1"><small>Distributed systems · Writing queue</small><h3>From classic mirroring to quorum: a practical RabbitMQ plan</h3><b>↗</b></article><article class="reveal" style="--d:2"><small>Full-stack delivery · Writing queue</small><h3>Runtime configuration for Angular across Kubernetes environments</h3><b>↗</b></article></div></section>
 
-  <section id="contact" class="contact wrap"><p class="eyebrow">Available for the right challenge</p><h2>Have a difficult system to improve?</h2><p>Senior backend, full-stack, cloud, and technical leadership opportunities in India or Europe—including remote collaboration.</p><div><span>Zirakpur, Punjab, India</span><a href="https://www.linkedin.com/in/anildhiman03/" target="_blank" rel="noopener">LinkedIn ↗</a></div></section>
-  <footer class="footer wrap"><span>© 2026 Anil Kumar</span><span>Designed around systems, not buzzwords.</span><a href="#top">Back to top ↑</a></footer>
+  <section id="contact" class="contact wrap reveal" aria-labelledby="contact-heading"><p class="eyebrow">Available for the right challenge</p><h2 id="contact-heading">Have a difficult system to improve?</h2><p>Senior backend, full-stack, cloud, and technical leadership opportunities in India or Europe—including remote collaboration.</p><div class="actions"><button type="button" class="button primary" data-open-talk>Let's talk ↘</button><a class="button" href="https://www.linkedin.com/in/anildhiman03/" target="_blank" rel="noopener">LinkedIn ↗</a></div><div class="contact-meta"><span>Zirakpur, Punjab, India</span><a href="mailto:anildhiman03@gmail.com">anildhiman03@gmail.com ↗</a></div></section>
+  <footer class="footer wrap"><span>© <time datetime="2026">2026</time> Anil Kumar</span><span>Designed around systems, not buzzwords.</span><a href="#top">Back to top ↑</a></footer>
+
+  <button type="button" class="talk-fab" data-open-talk aria-haspopup="dialog" aria-controls="talkDialog">
+    <span class="talk-fab-dot" aria-hidden="true"></span>
+    Let's talk?
+  </button>
+
+  <dialog id="talkDialog" class="talk-dialog" aria-labelledby="talkDialogTitle">
+    <form class="talk-form" id="talkForm" novalidate>
+      <div class="talk-form-head">
+        <div><p class="eyebrow">Start a conversation</p><h3 id="talkDialogTitle">Let's talk about your system.</h3></div>
+        <button type="button" class="talk-close" data-close-talk aria-label="Close dialog">✕</button>
+      </div>
+
+      <label class="talk-field">
+        <span>Name</span>
+        <input type="text" name="name" id="talkName" required autocomplete="name" maxlength="80" placeholder="Your name">
+      </label>
+
+      <label class="talk-field">
+        <span>Email</span>
+        <input type="email" name="email" id="talkEmail" required autocomplete="email" maxlength="120" placeholder="you@company.com">
+      </label>
+
+      <label class="talk-field">
+        <span>What are you working on?</span>
+        <textarea name="message" id="talkMessage" required maxlength="1200" rows="4" placeholder="A few lines about the system or role…"></textarea>
+      </label>
+
+      <label class="talk-hp" aria-hidden="true" tabindex="-1">
+        <span>Company</span>
+        <input type="text" name="company" id="talkCompany" tabindex="-1" autocomplete="off">
+      </label>
+
+      <label class="talk-field talk-captcha">
+        <span id="talkCaptchaLabel">What is 4 + 7?</span>
+        <input type="text" inputmode="numeric" name="captcha" id="talkCaptcha" required autocomplete="off" maxlength="4" placeholder="Your answer">
+      </label>
+
+      <p class="talk-status" id="talkStatus" role="status" aria-live="polite"></p>
+
+      <div class="talk-actions">
+        <button type="submit" class="button primary" id="talkSubmit">Send message</button>
+        <a class="talk-fallback" href="mailto:anildhiman03@gmail.com">or email directly ↗</a>
+      </div>
+    </form>
+  </dialog>
 </main>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+<script src="script.js" defer></script>
 </body>
 </html>

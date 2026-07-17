@@ -1,17 +1,8 @@
 # Anil Kumar — Engineering Portfolio
 
-A responsive, dependency-free portfolio for GitHub Pages.
-
-## Publish
-
-1. Upload every file and folder in this package to the repository root.
-2. Open repository **Settings → Pages**.
-3. Under **Build and deployment**, select **GitHub Actions**.
-4. Open **Actions** and wait for the deployment to complete.
-
-Your website will be available at:
-
-https://anildhiman03.github.io/anil-portfolio/
+A responsive, dependency-free static portfolio, deployed to a Hostinger VPS
+under `https://anildhiman.com`. See [docs/deployment.md](docs/deployment.md)
+for how deploys work.
 
 ## Extend it
 
