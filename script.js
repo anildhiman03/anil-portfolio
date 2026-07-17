@@ -6,16 +6,14 @@
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* ---------- EmailJS config for the "Let's talk?" form ----------
-     1. Create a free account at https://www.emailjs.com and connect your Gmail as a Service.
-     2. Create an Email Template with a "To email" of anildhiman03@gmail.com and body
-        variables {{from_name}}, {{from_email}}, {{message}}.
-     3. Copy your Public Key, Service ID and Template ID from the EmailJS dashboard
-        and paste them below. Until you do, the form still works (validation + captcha)
-        but shows a friendly "email isn't wired up yet" message instead of sending. */
-  var EMAILJS_PUBLIC_KEY = "REPLACE_WITH_EMAILJS_PUBLIC_KEY";
-  var EMAILJS_SERVICE_ID = "REPLACE_WITH_EMAILJS_SERVICE_ID";
-  var EMAILJS_TEMPLATE_ID = "REPLACE_WITH_EMAILJS_TEMPLATE_ID";
+  /* ---------- Web3Forms config for the "Let's talk?" form ----------
+     1. Go to https://web3forms.com, enter anildhiman03@gmail.com, and click the
+        verification link it emails you.
+     2. Copy the Access Key it shows you and paste it below.
+     Until you do, the form still works (validation + captcha) but shows a friendly
+     "email isn't wired up yet" message instead of sending. No SDK, no dashboard template —
+     just this one key. */
+  var WEB3FORMS_ACCESS_KEY = "0f91a834-5c0c-42b1-85f3-908afdce3bc5";
   var OWNER_EMAIL = "anildhiman03@gmail.com";
 
   /* ---------- Scroll reveal ---------- */
@@ -109,7 +107,7 @@
     });
   }
 
-  /* ---------- "Let's talk?" dialog: open/close, honeypot, math captcha, EmailJS ---------- */
+  /* ---------- "Let's talk?" dialog: open/close, honeypot, math captcha, Web3Forms ---------- */
   var talkDialog = document.getElementById("talkDialog");
   var talkForm = document.getElementById("talkForm");
 
@@ -171,8 +169,7 @@
       if (!inDialog) closeTalk();
     });
 
-    var emailReady = typeof emailjs !== "undefined" && EMAILJS_PUBLIC_KEY.indexOf("REPLACE_") !== 0;
-    if (emailReady) emailjs.init(EMAILJS_PUBLIC_KEY);
+    var emailReady = WEB3FORMS_ACCESS_KEY.indexOf("REPLACE_") !== 0;
 
     talkForm.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -202,11 +199,14 @@
         return;
       }
 
-      var params = {
+      var payload = {
+        access_key: WEB3FORMS_ACCESS_KEY,
+        subject: "New message from anil-portfolio — Let's talk",
         from_name: talkName.value.trim(),
-        from_email: talkEmail.value.trim(),
+        name: talkName.value.trim(),
+        email: talkEmail.value.trim(),
         message: talkMessage.value.trim(),
-        to_email: OWNER_EMAIL
+        to: OWNER_EMAIL
       };
 
       talkSubmit.disabled = true;
@@ -214,21 +214,26 @@
       talkSubmit.textContent = "Sending…";
       setStatus("Sending your message…", null);
 
-      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params).then(
-        function () {
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify(payload)
+      })
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          if (!data.success) throw new Error(data.message || "Web3Forms rejected the submission");
           setStatus("Thanks — I'll get back to you soon.", "ok");
           talkForm.reset();
           talkSubmit.disabled = false;
           talkSubmit.textContent = originalLabel;
           setTimeout(closeTalk, 1600);
-        },
-        function (err) {
-          console.error("EmailJS send failed:", err);
+        })
+        .catch(function (err) {
+          console.error("Web3Forms send failed:", err);
           setStatus("Something went wrong sending that — please email me directly below.", "error");
           talkSubmit.disabled = false;
           talkSubmit.textContent = originalLabel;
-        }
-      );
+        });
     });
   }
 

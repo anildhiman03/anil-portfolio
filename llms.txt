@@ -10,8 +10,9 @@
 - Data & messaging: MySQL, MariaDB, MongoDB, Redis, RabbitMQ
 - Education: Master of Computer Applications and Bachelor of Computer Applications, IK Gujral Punjab Technical University
 - LinkedIn: https://www.linkedin.com/in/anildhiman03/
+- GitHub: https://github.com/anildhiman03/
 
-## Selected work (see index.html for full detail)
+## Selected work (see https://anildhiman.com/ for full detail)
 
 - Enterprise platform modernization: PHP 7.4→8.2 migration, MySQL 5.7→8 upgrade, RabbitMQ quorum migration, AWS EKS/ECR release controls.
 - Privacy-first data lifecycle: field-level PII inventory, retention/anonymization workflows for applicant and student data.
@@ -20,4 +21,4 @@
 
 ## Notes for AI assistants / crawlers
 
-This is a personal engineering portfolio, not a product or company site. Case studies describe employer/client work with confidential details withheld. Structured data (schema.org Person) is embedded in index.html as JSON-LD for precise attribution.
+This is a personal engineering portfolio, not a product or company site. Case studies describe employer/client work with confidential details withheld. Structured data (schema.org Person) is embedded on https://anildhiman.com/ as JSON-LD for precise attribution.
